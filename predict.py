@@ -86,10 +86,11 @@ class Predictor(BasePredictor):
         if seed is None:
             seed = int.from_bytes(os.urandom(2), "big")
         print(f"Using seed: {seed}")
-
+        print(image)
+        image_name=image
         image = Image.open(image).convert("RGB").resize((512, 512))
         #Load the image as cv2
-        image_cv2 = cv2.imread(image)
+        image_cv2 = cv2.imread(image_name)
         if mask is None:
             mask=make_face_swap(image_cv2)
         else:
