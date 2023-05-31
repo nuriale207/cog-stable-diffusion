@@ -25,7 +25,7 @@ import cv2
 
 # MODEL_ID refers to a diffusers-compatible model on HuggingFace
 # e.g. prompthero/openjourney-v2, wavymulder/Analog-Diffusion, etc
-MODEL_ID = "stabilityai/stable-diffusion-2-inpainting"
+MODEL_ID = "Nurialeb207/sd_face"
 MODEL_CACHE = "diffusers-cache"
 
 class Predictor(BasePredictor):
