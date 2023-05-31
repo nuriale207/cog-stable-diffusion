@@ -64,6 +64,7 @@ class Predictor(BasePredictor):
         ),
         mask: Path = Input(
             description="Black and white image to use as mask for inpainting over the image provided. White pixels are inpainted and black pixels are preserved",
+            default=None,
         ),
         num_outputs: int = Input(
             description="Number of images to output. Higher number of outputs may OOM.",
